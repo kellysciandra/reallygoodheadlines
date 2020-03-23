@@ -1,38 +1,185 @@
-.App {
+
+@media(max-width: 500px) {
+  /* Stack Grid Items */
+* {
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: black
+}
+
+h3 {
+  margin: auto;
+  margin-top: 5%;
+  font-size: 2em!important;
+}
+br {
+  display: none;
+}
+.btn {
+  padding: .5rem!important;
+  width: 50%;
+  background: var(--orange)
+}
+.text-muted {
+  padding: 1rem;
+}
+.text-muted_update {
+  display: none;
+}
+  
+.beats {
+  display: none;
+}
+
+/* navbar */
+
+#navbar {
+  position: initial
+}
+
+.nav .brand_link {
+  width: 75%;
+  margin: 2.5rem;
+  font-size: 2em!important;
+}
+
+.mobile_link{
+display: inherit;
+font-size: 1.5rem;
+padding: .25rem;
+color: black;
+border: 2px solid rgb(84, 255, 184);
+}
+
+.toggler {
+  display: none;
+}
+
+/* dashboard */
+
+.header .main {
+  padding: 0;
+  margin: 0
+}
+.showcase {
+  height: 525px;
+
+  margin: .5rem;
+  margin-bottom: 30%;
+}
+
+.showcase .first {
+  grid-gap: 1rem;
+}
+
+.showcase .first .showcase_btn1 {
+  margin-bottom: 5rem;
+}
+
+/* main recipe display */
+.recipe_card {
+  grid-template-columns: 1fr;
+  margin: auto;
+  width: 250px;
+  grid-gap: 2rem; 
+}
+
+.recipe_image {
+  height: 250px;
+  width: 250px
+}
+
+.recipe_card .recipe_section {
+  height: 250px;
+  width: 250px;
+  border: none;
+}
+
+/* submit recipe */
+
+.recipe_form_card {
+  grid-template-columns: 1fr;
+  margin: auto;
+  border: none;
+  width: 100%;
+
+}
+.recipe_form_card .recipe_form_display {
+  display: none;
+}
+
+.recipe_input {
+  margin: 1%;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* ask a chef */
+.ask_form_card {
+  grid-template-columns: 1fr;
+  margin: auto;
+  border: none;
+  width: 100%;
+
+}
+.ask_form_card .ask_form_display {
+  display: none;
+}
+
+.ask_input {
+  margin: 1%;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+
+/* cook/book */
+
+.cookbook_card {
+  grid-template-columns: 1fr;
+  border: none;
+  margin: 0;
+  height: 1850px;
+}
+
+.cookbook_image {
+  height: 250px;
+  width: 250px;
+  margin: 4rem;
+}
+
+.cookbook_card .section1 {
+  height: 250px;
+  width: 250px;
+  margin: auto;
   text-align: center;
+  font-size: .75em!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cookbook_card .section2 {
+  width: 60%;
+  text-align: left;
+  margin-top: 25%;
+  font-size: .65em!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cookbook_card .section2 br {
+  display: initial
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+
+
+/* footer */
+
+#bottom .column4, .column1, .column2 {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
